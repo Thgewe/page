@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#!" class="header__logo-link">
+                        <img src="./img/svg/header-logo.svg" alt="logotip" class="header__logo-pic">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#bioJaneDoe" class="header__link js-scroll">Jane Doe</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#infoInput" class="header__link js-scroll">Tell us about yourself</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#sliderMenu" class="header__link js-scroll">Slider</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <main class="main">
+        <!-- Biography start  -->
+        <section class="biography" id="bioJaneDoe">
+            <div class="biography__border-radius">
+                <div class="wrapper">
+                    <div class="biography__wrapper">
+                        <div class="biography__pic">
+                            <img src="./img/jpg/photo-Jane-Doe.jpg" alt="photo of Jane Doe" class="biography__photo">
+                            <div class="biography__cube-sm"></div>
+                            <div class="biography__cube-lg"></div>
+                        </div> 
+                        <div class="biography__desc">
+                            <h1 class="biography__desc-title">
+                                Jane Doe
+                            </h1>
+                            <div class="biography__desc-bio">
+                                <ul class="biography__desc-bio-list">
+                                    <li class="biography__desc-bio-item">Date of birth</li>
+                                    <li class="biography__desc-bio-item">21.04.2001</li>
+                                    <li class="biography__desc-bio-item">Gender</li>
+                                    <li class="biography__desc-bio-item">Female</li>
+                                    <li class="biography__desc-bio-item">Country</li>
+                                    <li class="biography__desc-bio-item">Corea</li>
+                                </ul>
+                            </div>
+                            <h3 class="biography__desc-about">
+                                About me
+                            </h3>
+                            <div class="biography__desc-text">
+                                <p class="biography__desc-paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                          
+                                </p>
+                                <p class="biography__desc-paragraph">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Biography end -->
+
+        <!-- Info start -->
+
+        <section class="info" id="infoInput">
+            <div class="wrapper">
+                <div class="info__wrapper">
+
+                    <h2 class="info__title">
+                        Tell us about yourself
+                    </h2>
+                    <form action="#!" class="info__form" autocomplete="off">
+                        <div class="info__inputs">
+                            <div class="info__inputs-card">
+                                <h4 class="info__inputs-title">Your name</h4>
+                                <input name="name" type="text" class="info__input js-input-first" placeholder="Tell us your name">
+                            </div>
+                            <div class="info__inputs-card">
+                                <h4 class="info__inputs-title">Your gender</h4>
+                                <select name="gender" id="" class="info__input info__input-select select js-input-first" >
+                                    <option class="select__option" value="choose" selected>Choose your gender</option>
+                                    <option class="select__option" value="male">Male</option>
+                                    <option class="select__option" value="female">Female</option>
+                                </select>
+                            </div>
+                            <div></div>
+                            <div class="info__inputs-card js-info-hidden-first">
+                                <h4 class="info__inputs-title">Your country</h4>
+                                <input type="text" class="info__input js-input-second" placeholder="Where are you from?">
+                            </div>
+                            <div class="info__inputs-card js-info-hidden-first">
+                                <h4 class="info__inputs-title">Your City</h4>
+                                <input type="text" class="info__input js-input-second" placeholder="Your native city">
+                            </div>
+                            <div class="info__inputs-card js-info-hidden-first">
+                                <h4 class="info__inputs-title">Your date of birth</h4>
+                                <input name="birthdate" type="text" class="info__input info__input-date js-input-second" placeholder="dd.mm.yyyy">
+                            </div>
+                            <div class="info__inputs-file js-info-hidden-second">
+                                <input type="file" name="fileInput[]" id="info__input-file" multiple="multiple" class="info__input-file" tabindex="-1">
+                                <div class="info__input-file-styled">
+                                    <p class="info__input-file-text">
+                                        Proof your identity with some documents
+                                    </p>
+                                    <label tabindex="0" class="info__input-file-add" for="info__input-file">
+                                        Add document
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__file-add-field"></div>
+                        <div class="info__submit">
+                            <button type="button" class="info__submit-button js-disabled" >
+                                Send info
+                            </button>
+                            <div class="info__success-wrap js-success-disabled">
+                                <div class="info__submit-success">
+                                    <img src="./img/svg/success.svg" alt="success" class="info__submit-success-arrow">
+                                </div>
+                                <div class="info__submit-text">
+                                    Completed
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="info__cubes-left">
+                        <div class="info__cube-sm"></div>
+                        <div class="info__cube-md"></div>
+                        <div class="info__cube-lg"></div>
+                    </div>
+                    <div class="info__cubes-right">
+                        <div class="info__cube-sm"></div>
+                        <div class="info__cube-md"></div>
+                        <div class="info__cube-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info end -->
+
+        <!-- Slider start -->
+
+        <section class="slider" id="sliderMenu">
+            <div class="wrapper">
+                <div class="slider__wrapper">
+                    <div class="slider__container">
+                        <div class="slider__track">
+                            <div class="slider__content">
+                                <img src="./img/jpg/slide-1.jpg" alt="Waves" class="slider__thumb">
+                                <div class="slider__text">
+                                    <h2 class="slider__text-title">
+                                        Slide this photo
+                                    </h2>
+                                    <p class="slider__text-desc">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                    </p>
+                                </div>                          
+                            </div>
+                            <div class="slider__content">
+                                <img src="./img/jpg/slide-1.jpg" alt="Waves" class="slider__thumb">
+                                <div class="slider__text">
+                                    <h2 class="slider__text-title">
+                                        Slide this photo
+                                    </h2>
+                                    <p class="slider__text-desc">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                    </p>
+                                </div>                          
+                            </div>
+                            <div class="slider__content">
+                                <img src="./img/jpg/slide-1.jpg" alt="Waves" class="slider__thumb">
+                                <div class="slider__text">
+                                    <h2 class="slider__text-title">
+                                        Slide this photo
+                                    </h2>
+                                    <p class="slider__text-desc">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                    </p>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__circles">
+                        <span class="slider__circle js-circle-enabled"></span>
+                        <span class="slider__circle"></span>
+                        <span class="slider__circle"></span>
+                    </div>
+                    <div class="slider__buttons">
+                        <div class="slider__left">
+                            <span class="slider__line-first"></span>
+                            <span class="slider__line-second"></span>
+                        </div>
+                        <div class="slider__right">
+                            <span class="slider__line-first"></span>
+                            <span class="slider__line-second"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider end -->
+
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+</html>
